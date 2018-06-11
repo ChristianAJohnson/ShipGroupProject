@@ -8,6 +8,14 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/users/new">Sign Up</a>
+    <a href="#">Log In</a>
+    <a href="/users">Captains</a>
+    <a href="/boats">Boats</a>
+    <a href="/jobs">Job Listings</a>
+  </nav>
 
   <body>
     <%= yield %>

@@ -1,2 +1,11 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<h1>Become a Captain!</h1>
+
+<div class="sign-up">
+  <%= form_for @user do |f| %>
+    <p class="inputTitles"><strong>Username:</strong></p><%= f.text_field :name, :class => 'inputBar' %>
+    <p class="inputTitles"><strong>Password:</strong></p><%= f.text_field :password, :class => 'inputBar' %>
+    <div class="submit-div">
+      <%= f.submit "Create", :class => 'submitBttn' %>
+    </div>
+  <% end %>
+</div>
